@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Login Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css"/>
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    
+    
+    <body>
+        <div class="page">
+            <div class="form">
+                <div class="dialog">
+                    <div class="title">
+                        <span id="page-title" > Sign Up </span>
+                    </div>
+                    <div class="body">
+                        <div class="row" id="name">
+                        <input class="part"  placeholder="First Name" type="text"/> 
+                        <input class="part" placeholder="Last Name" type="text"/>
+                        </div>
+                        <div class="row" id="mobile_no">
+                            <input class="full"  placeholder="Phone No." type="tel" required onfocusout="phoneNumber(this)"/>
+                        </div> 
+                        <div class="row" id="email">
+                            <input class="full"  placeholder="Email" type="email" required onfocusout="phoneNumber(this)"/>
+                        </div>
+                        <div class="row" id="password">
+                            <input class="part"  placeholder="Password" type="password"/> 
+                            <input class="part" placeholder="Confirm Password" type="password"/>
+                        </div>
+
+                        <div class="row-top" id="terms">
+                         <div class="check-term">
+                            <input type="checkbox" class="check-box"/><span>I Agree</span>
+                         </div>
+                         <div class="terms">
+                            By clicking <span class="register-box">Register</span>, you agree to the <span class="tc" >Terms and Conditions</span> set out by this site, including our Cookie use.
+                         </div>
+                        </div> 
+                        <div class="row" id="submit">
+                            <button class="part button register" type="button">Register</button>
+                            <button class="part button sign-in" type="button">Sign In</button>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html> 
